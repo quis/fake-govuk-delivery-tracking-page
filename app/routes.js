@@ -3,7 +3,9 @@ var router = express.Router()
 
 // Route index page
 router.get('/', function (req, res) {
-  res.render('index')
+  res.render('index', {
+    'token': req.query.token
+  });
 })
 
 // add your routes here

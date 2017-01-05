@@ -11,54 +11,32 @@
     <div class="column-two-thirds">
 
       <h1 class="heading-xlarge">
-        The GOV.UK prototype kit
-        <span class="heading-secondary">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
+        Track your licence
+      </h1>
+      <div class="govuk-box-highlight">
       <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
+        Tracking number<br><span class="heading-small">{{ token }}</span>
       </p>
-
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
+      <p class="heading-medium">
+        Your licence is on its way.<br>It should be with you today or tomorrow.
       </p>
+      </div>
 
-      <h2 class="heading-medium">About this page</h2>
+      <h2 class="heading-medium">History</h2>
 
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
-
-			<h2 class="heading-medium">Examples and documentation</h2>
-
-			<ul class="list list-bullet">
-				<li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-				<li><a href="https://github.com/alphagov/govuk_prototype_kit">GitHub</a></li>
-			</ul>
-
-      <h2 class="heading-medium">Other resources</h2>
-
-			<ul class="list list-bullet">
-				<li>
-					<a href="https://govuk-elements.herokuapp.com/snippets/">
-						Guide to GOV.UK Elements
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/service-manual">
-						Service design manual
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/design-principles">
-						Government Digital Service Design Principles
-					</a>
-				</li>
-			</ul>
-
+      <table>
+        <thead>
+          <tr><th>Time</th><th>Status</th>
+        </thead>
+        <tbody>
+          <tr><td>Today – 6:45am</td><td>Romford RMA – Out for delivery</td></tr>
+          <tr><td>Yesterday – 5:11pm</td><td>Swansea Depot – Transfer</td></tr>
+          <tr><td>Yesterday – 3:01pm</td><td>Swansea Depot – Received</td></tr>
+          <tr><td>Yesterday – 9:20am</td><td>DVLA – Printing</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </main>
 
 {% endblock %}
-
-
